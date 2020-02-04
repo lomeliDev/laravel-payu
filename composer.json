@@ -1,0 +1,29 @@
+{
+    "name": "toopago/payu",
+    "description": "Una interfaz fluida para Laravel usando el SDK oficial de PayU latam.",
+    "keywords": ["laravel", "payu", "pagos"],
+    "license": "MIT",
+    "authors": [{
+        "name": "TooPago",
+        "email": "developer@toopago.io"
+    }],
+    "require": {
+        "php": "^7.2"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TooPago\\Payu\\Tests\\": "tests/"
+        }
+    },
+    "require-dev": {
+        "orchestra/testbench": "^4.6"
+    },
+    "autoload": {
+        "classmap": [
+            "sdk/lib"
+        ],
+        "psr-4": {
+            "TooPago\\Payu\\": "src/"
+        }
+    }
+}

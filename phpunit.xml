@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="false">
+    <php>
+        <env name="APP_ENV" value="local"/>
+        <env name="PAYU_ON_TESTING" value="false"/>
+        <env name="PAYU_MERCHANT_ID" value="508029"/>
+        <env name="PAYU_API_LOGIN" value="pRRXKOl8ikMmt9u"/>
+        <env name="PAYU_API_KEY" value="4Vj8eK4rloUd272L48hsrarnUA"/>
+        <env name="PAYU_ACCOUNT_ID" value="512324"/>
+        <env name="PAYU_COUNTRY" value="MX"/>
+        <env name="PAYU_BUYER_EMAIL" value="payments@toopago.io"/>
+        <env name="PAYU_PAYER_NAME" value="TooPago"/>
+        <env name="PAYU_PAYER_DNI" value="xxxxx"/>
+    </php>
+    <testsuites>
+        <testsuite name="Package Test Suite">
+            <directory suffix=".php">./tests/</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
